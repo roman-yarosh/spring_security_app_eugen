@@ -27,9 +27,10 @@ CREATE TABLE user_roles (
 
 -- Insert data
 
-INSERT INTO users VALUES (1, 'proselyte', '$2a$11$uSXS6rLJ91WjgOHhEGDx..VGs7MkKZV68Lv5r1uwFu7HgtRn3dcXG');
+INSERT INTO users VALUES (1, 'roman', '$2a$11$g2cNH68rDoNcL8r7Z3qrHeJY6m0OJEFtDlcvhkMNq8hDc78OJrsae');
 
 INSERT INTO roles VALUES (1, 'ROLE_USER');
-INSERT INTO roles VALUES (2, 'ROLE_ADMIN');
+INSERT INTO roles VALUES (2, 'ROLE_MODERATOR');
+INSERT INTO roles VALUES (3, 'ROLE_ADMIN');
 
-INSERT INTO user_roles VALUES (1, 2);
+INSERT INTO user_roles VALUES (1, 3);
